@@ -1,0 +1,160 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --ab: aliceblue;
+    --r: rgb(242, 218, 236);
+    --db: rgb(184, 220, 251);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgba(0, 128, 128, 0.421);
+    color: teal;
+    font-size: 18px;
+    border-radius: 100px;
+    width: 120px;
+    text-decoration: none;
+    text-align: center;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover{
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--ab);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.btns{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btnLogin{
+    margin-right: 20px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--r);
+    display: flex;
+
+}
+
+.left {
+    height: 100%;
+    width: 70%;
+}
+
+.right {
+    width: 30%;
+    height: 100%;
+    background-color: var(--db);
+}
+
+.loginbox {
+    width: 385px;
+    background-color: lightyellow;
+    padding: 50px 30px;
+    border-radius: 20px;
+    color: teal;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+}
+
+.history {
+padding: 40%;
+align-items: center;
+
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    right: 170px;
+    border-radius: 100%;
+}
+
+.loginbox input[type="text"],
+input[type="Password"] {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.173);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: rgba(56, 58, 58, 0.961);
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.loginbox input[type="Submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgba(0, 128, 128, 0.421);
+    color: teal;
+    font-size: 20px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.loginbox a {
+    text-decoration: none;
+    color: grey;
+}
+
+.loginbox input[type="Submit"]:hover {
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+}
+
+.loginbox a:hover {
+    text-decoration: underline;
+    color: teal;
+}
+
+.loginc{
+    background-image: url("./Images/bg.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
