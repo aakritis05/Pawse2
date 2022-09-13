@@ -5,9 +5,9 @@ body {
 }
 
 :root {
-    --ab: aliceblue;
-    --r: rgb(242, 218, 236);
-    --db: rgb(184, 220, 251);
+    --ab: rgb(255, 255, 255);
+    --r: rgba(170, 236, 179, 0.473);
+    --db: rgba(184, 220, 251, 0.647);
 }
 
 * {
@@ -158,3 +158,10 @@ h1 {
     height: 100%;
     width: 100%;
 }
+
+.sidebar{
+background-color: white;
+width: 20px;
+height: 20px;
+}
+
