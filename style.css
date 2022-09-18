@@ -18,7 +18,7 @@ body {
     box-sizing: border-box;
 }
 
-.btn{
+.btn {
     border: none;
     outline: none;
     height: 40px;
@@ -35,7 +35,7 @@ body {
     justify-content: center;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: teal;
     color: white;
     cursor: pointer;
@@ -45,20 +45,20 @@ body {
     width: 100%;
     height: 100px;
     background-color: var(--ab);
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
 }
 
 
-.btns{
-    display:flex;
+.btns {
+    display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.btnLogin{
+.btnLogin {
     margin-right: 20px;
 }
 
@@ -140,7 +140,7 @@ h1 {
     color: teal;
 }
 
-.loginc{
+.loginc {
     background-image: url("./Images/bg.jpg");
     background-size: cover;
     height: 100%;
@@ -154,19 +154,17 @@ h1 {
     padding: 50px;
 }
 
-.sidebar{
-width: 100%;
-height: 20px;
+.sidebar {
+    width: 100%;
 }
 
-.history{
+.history {
     margin-top: 20px;
 }
 
-.fav-container{
- display: flex;
- padding: 20px;
- flex-direction: column;
- margin-top: 20px;
- background-color: aquamarine;
+.fav-container, .his-container {
+    display: flex;
+    padding-left: 20px;
+    margin-top: 10px;
+    flex-direction: column;
 }
