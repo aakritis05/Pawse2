@@ -18,6 +18,32 @@ body {
     box-sizing: border-box;
 }
 
+.registering {
+    width: 385px;
+    background-color: lightyellow;
+    padding: 50px 30px;
+    border-radius: 20px;
+    color: teal;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    box-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.registering a {
+    text-decoration: none;
+    color: grey;
+}
+
+.registering a:hover {
+    text-decoration: underline;
+    color: teal;
+}
+
 .btn {
     border: none;
     outline: none;
@@ -95,8 +121,9 @@ body {
     border-radius: 100%;
 }
 
-.loginbox input[type="text"],
-input[type="Password"] {
+input[type="text"],
+input[type="Password"], 
+input[type="search"] {
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.173);
     background: transparent;
@@ -109,11 +136,20 @@ input[type="Password"] {
     padding: 0;
 }
 
+input[type="search"]{
+    background-color: white;
+    width: 500px;
+    height: 50px;
+    border-radius: 100px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
 h1 {
     text-align: center;
 }
 
-.loginbox input[type="Submit"] {
+input[type="Submit"] {
     border: none;
     outline: none;
     height: 40px;
@@ -124,12 +160,13 @@ h1 {
     width: 100%;
 }
 
+
 .loginbox a {
     text-decoration: none;
     color: grey;
 }
 
-.loginbox input[type="Submit"]:hover {
+input[type="Submit"]:hover {
     background-color: teal;
     color: white;
     cursor: pointer;
@@ -169,6 +206,16 @@ h1 {
     flex-direction: column;
 }
 
-.rohit {
-    
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+.bts{
+    height: 50px;
+    width: 50px;
+    background-color: blueviolet;
+}
+
