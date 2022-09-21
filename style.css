@@ -97,6 +97,8 @@ h1 {
 }
 
 .left {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 70%;
 }
@@ -122,8 +124,7 @@ h1 {
 }
 
 input[type="text"],
-input[type="Password"], 
-input[type="search"] {
+input[type="Password"]{
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.173);
     background: transparent;
@@ -136,28 +137,37 @@ input[type="search"] {
     padding: 0;
 }
 
-input[type="search"]{
+h1 {
+    text-align: center;
+}
+
+.searchArea {
+    display: flex;
+    justify-content: center;
+}
+
+#searchBar {
     background-color: white;
     width: 500px;
     height: 50px;
     border-radius: 100px;
     padding-left: 20px;
-    padding-right: 30px;
-}
-
-h1 {
-    text-align: center;
-}
-
-input[type="Submit"] {
+    padding-right: 20px;
     border: none;
     outline: none;
-    height: 40px;
-    background: rgba(0, 128, 128, 0.421);
-    color: teal;
-    font-size: 20px;
-    border-radius: 20px;
-    width: 100%;
+    color: rgba(56, 58, 58, 0.961);
+    font-size: 16px;
+    margin: 0;
+}
+
+.btnSearch {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    margin-left: -47px;
+    cursor: pointer;
 }
 
 
@@ -210,12 +220,4 @@ input[type="Submit"]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
-.bts{
-    height: 50px;
-    width: 50px;
-    background-color: blueviolet;
-}
-
