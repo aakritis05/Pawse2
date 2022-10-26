@@ -16,7 +16,12 @@
             ');
         
         } else{ 
+            echo ("<div>");
             echo($USER);
+            echo("<Br>");
+            echo("<a href = './logout.php' class= 'logOut'> Log Out </a>");
+            echo ("</div>");
+
         }
 
         ?>

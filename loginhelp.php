@@ -12,8 +12,6 @@ $rows = $result -> num_rows;
 if($rows==1){
     session_start();
     $_SESSION['USER']=$name;
-    echo('logged in');
-} else {
-    echo('not logged in');
+    header("Location: index.php");
 }
 ?>

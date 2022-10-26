@@ -104,7 +104,8 @@ $connect = new dbConnection;
 
             <div class="history sidebar">
                 <div class="his">
-                    <img src="./Images/right-arrow.png" alt="" height="10">
+                    <img class = "arrowImg" src="./Images/right-arrow.png" alt="" height="10">
+
                     History
                 </div>
                 <div class="his-container">
