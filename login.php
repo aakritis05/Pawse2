@@ -15,6 +15,7 @@
             </h1>
             <br>
             <br>
+            <!-- The login form takes Data from the user and sends it to loginhelp.php -->
             <form action = "loginhelp.php" method="post">
                 <label for="firstname"> Username:</label><br>
                 <input type="text" id="firstname" name="Firstname" placeholder="Enter username">

@@ -1,3 +1,4 @@
+<!-- This adds the new used to the database, whenever a new user creates a new account -->
 <?php
 include("./inc/conn.php");
 

@@ -1,6 +1,10 @@
+
+<!-- This is the header of the website,
+and contains the navigation menu of the website,
+ which will help the user navigate through all the pages of the website. -->
+
 <header class="header">
-        <img src="images/logo.png" alt="logo" class="logo">
-        
+        <img src="images/logo.png" alt="logo" class="logo">      
 
         <?php
         if (empty($USER)) {
@@ -21,10 +25,6 @@
             echo("<Br>");
             echo("<a href = './logout.php' class= 'logOut'> Log Out </a>");
             echo ("</div>");
-
         }
-
         ?>
-
-
     </header>

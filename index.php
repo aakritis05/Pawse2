@@ -37,9 +37,14 @@ $connect = new dbConnection;
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This connects the style sheet with the HTML/PHP -->
     <link rel="stylesheet" href="style.css">
+    <!-- This is the name of the page that appears on the browser tab -->
     <title>Pawse</title>
+    <!-- Linking the JS file with the HTML/PHP -->
     <script src="./JS/app.js"></script>
+    <!-- Importing JQuery -->
+    <script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
