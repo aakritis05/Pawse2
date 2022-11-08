@@ -9,9 +9,9 @@
 </head>
 <body>
 <?php include("./header.php"); ?>
-</body>
-</html>
 
+<div class="container">
+    <div class="searchLeft">
 
 
 
@@ -33,16 +33,19 @@ if (!empty($USER)) {
 
 
 
-
-//get data from location table
+// Handles the exceptions when datase is empty or when the data does not match witht he database
+try {
+    //get data from location table
 $mySQL = "Select * from Locations where Location='$R'";
 $result= $connect -> connect()->query($mySQL);
 $numbRows = $result->num_rows;
 
 if($numbRows > 0){
+    // Gets the search result form the database until the input matches any of the names in the table and stores it in a array
     while($row=$result->fetch_assoc()){
         $data[]=$row;
     }
+    // Displays all the data from the array as a GUI List
    foreach($data as $d){
     echo("<div class='searchContainer'>");
     echo('<img class = "Image" src = "./Images/'.$d['Image'].'">');    
@@ -55,14 +58,31 @@ if($numbRows > 0){
    }
 }   
 
+} catch (Exception $E) {
+    echo("error: ".$E -> getMessage());
+}
+
 ?>
+
+
+
+</div>
+
+<div class="searchRight">
+</div>
+</div>
+</body>
+</html>
+
+
 
 <style>
     .searchContainer{
     height: fit-content;
     width: fit-content;
     padding: 20px 20px 20px 20px;
-    font: times 
+    font: times; 
+    background-color: white;
 
 }
 
