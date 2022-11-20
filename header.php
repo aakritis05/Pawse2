@@ -4,8 +4,9 @@ and contains the navigation menu of the website,
  which will help the user navigate through all the pages of the website. -->
 
 <header class="header">
+    <a href="./index.php">
         <img src="images/logo.png" alt="logo" class="logo">      
-
+        </a>
         <?php
         if (empty($USER)) {
             echo('

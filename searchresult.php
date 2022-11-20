@@ -47,14 +47,15 @@ if($numbRows > 0){
     }
     // Displays all the data from the array as a GUI List
    foreach($data as $d){
-    echo("<div class='searchContainer'>");
-    echo('<img class = "Image" src = "./Images/'.$d['Image'].'">');    
-    echo("<div class='Name'>".$d['Name']."</div>");
-    echo("<div class='Accommodations'>".$d['Accommodations']."</div>");
-    // echo("<div class='Directions'>".$d['Directions']."</div>");
-    echo("<div class='PostalCode'>".$d['PostalCode']."</div>");
-    echo("<div class='Price'>".$d['Price']."</div>");
-    echo("</div>");
+    // echo("<div class='searchContainer' onclick='showMap(".$d['SNo'].")'>
+    echo("<div class='searchContainer' onclick='showMap()'>
+   <img class = 'Image' src = './Images/".$d['Image']."'>  
+    <div class='Name'>".$d['Name']."</div>
+    <div class='Accommodations'>".$d['Accommodations']."</div>
+    <div class='PostalCode'>".$d['PostalCode']."</div>
+    <div class='Price'>".$d['Price']."</div>
+    <div class='directions'>".$d['Directions']."</div>
+    </div> ");
    }
 }   
 
@@ -63,63 +64,89 @@ if($numbRows > 0){
 }
 
 ?>
-
-
-
 </div>
-
-<div class="searchRight">
+<div class="searchRight">click on the search result to see the location</div>
 </div>
-</div>
+<script src="./JS/app.js"></script>
 </body>
 </html>
 
-
-
 <style>
-    .searchContainer{
-    height: fit-content;
-    width: fit-content;
-    padding: 20px 20px 20px 20px;
-    font: times; 
-    background-color: white;
-
-}
-
-    .Name {
-        font-size: 22px;
-        font-weight: 800;
-        margin-bottom: 5px;
-        width: 350px;
-        
-    }
-
-    .PostalCode{
-        margin-bottom: 5px;
-        width: 350px;
-    }
-
-    .Accommodations{
-        margin-bottom: 5px;
-        width: 350px;
-    }
-
-    .Price {
-        margin-bottom: 5px;
-        width: 350px;
-    }
-
-    .Directions{
-        width: 350px;
-
-    }
-
-    .Image{
-        width: 400px;
-        border-radius: 12px;
-        margin-bottom: 20px;
-        
-    
-    }
-
+ .searchContainer{
+ height: fit-content;
+ width: 100%;
+ padding: 20px 20px 20px 20px;
+ font: times; 
+ background-color: white;
+ border: 1px solid rgb(232, 232, 232);
+ margin: 10px 0;
+ border-radius: 12px;
+ }
+ 
+ .searchContainer:hover{
+ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ cursor: pointer;
+ }
+ 
+ .Name {
+ font-size: 22px;
+ font-weight: 800;
+ margin-bottom: 5px;
+ width: 350px;
+ 
+ }
+ 
+ .PostalCode{
+ margin-bottom: 5px;
+ width: 350px;
+ }
+ 
+ .Accommodations{
+ margin-bottom: 5px;
+ width: 350px;
+ }
+ 
+ .Price {
+ margin-bottom: 5px;
+ width: 350px;
+ }
+ 
+ .Directions{
+ width: 350px;
+ }
+ 
+ .Image{
+ width: 400px;
+ border-radius: 12px;
+ margin-bottom: 20px; 
+ }
+ 
+ .searchLeft {
+ display: flex;
+ flex-direction: column;
+ height: 100%;
+ width: 30%;
+ background-color: white;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ padding: 20px;
+ }
+ 
+ .searchRight {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+ width: 70%;
+ }
+ 
+ .direction {
+ display: none;
+ }
+ 
+ iframe {
+ height: 100%;
+ width: 100%;
+ }
+ 
 </style>

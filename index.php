@@ -118,12 +118,12 @@ $connect = new dbConnection;
                         $mySQL = "Select * from History where UserName='$USER'";
                         $result= $connect -> connect()->query($mySQL);
                         $numbRows = $result->num_rows;
-                        
+                        // Print to console with result, trouble shooting step, where data is being mis handled, if prints to consoole, then
                         if($numbRows > 0){
                             while($row=$result->fetch_assoc()){
                                 $data[]=$row;
                             }
-                        
+                            // 
                             foreach($data as $d){
                                 echo($d['Name']);
                                 echo('<br>');    
